@@ -22,8 +22,16 @@
    <relativePath>../../hadoop-project</relativePath>
 </parent>
   <artifactId>hadoop-client-runtime</artifactId>
-  <version>3.4.3</version>
+  <version>3.4.3-deepbi1</version>
   <packaging>jar</packaging>
+
+  <!-- hadoop-shaded-guava 1.5.0-deepbi1 is only published there -->
+  <repositories>
+    <repository>
+      <id>deep-bi-github-artifact</id>
+      <url>https://raw.githubusercontent.com/deep-bi/maven-repo/main</url>
+    </repository>
+  </repositories>
 
   <description>Apache Hadoop Client</description>
   <name>Apache Hadoop Client Runtime</name>
